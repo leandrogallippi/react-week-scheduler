@@ -1,8 +1,9 @@
 {
   "name": "react-weekly-scheduler",
+  "author": "leandrogallippi",
   "version": "0.0.0-development",
   "license": "MIT",
-  "description": "",
+  "description": "![Travis (.org)](https://img.shields.io/travis/remotelock/react-week-scheduler.svg) ![npm](https://img.shields.io/npm/v/@remotelock/react-week-scheduler.svg)",
   "homepage": "https://github.com/leandrogallippi/react-week-scheduler/",
   "private": false,
   "sideEffects": [
@@ -19,7 +20,9 @@
   ],
   "main": "build/index.js",
   "module": "build/index.es.js",
-  "files": ["build"],
+  "files": [
+    "build"
+  ],
   "types": "./src/index.d.ts",
   "dependencies": {
     "@reach/visually-hidden": "^0.1.2",
@@ -142,9 +145,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/SeanGroff/react-week-scheduler"
+    "url": "git+https://github.com/SeanGroff/react-week-scheduler.git"
   },
   "engines": {
     "node": ">=10.13.0"
+  },
+  "bugs": {
+    "url": "https://github.com/SeanGroff/react-week-scheduler/issues"
   }
 }
