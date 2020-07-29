@@ -1,9 +1,9 @@
 {
-  "name": "react-weekly-schedule",
+  "name": "react-weekly-scheduler",
   "version": "0.0.0-development",
   "license": "MIT",
   "description": "",
-  "homepage": "https://github.com/SeanGroff/react-week-scheduler/",
+  "homepage": "https://github.com/leandrogallippi/react-week-scheduler/",
   "private": false,
   "sideEffects": [
     "*.css"
@@ -17,8 +17,9 @@
     "google calendar",
     "fullcalendar"
   ],
-  "main": "index.js",
-  "module": "index.js",
+  "main": "build/index.js",
+  "module": "build/index.es.js",
+  "files": ["build"],
   "types": "./src/index.d.ts",
   "dependencies": {
     "@reach/visually-hidden": "^0.1.2",
@@ -133,7 +134,7 @@
     "clean": "rimraf dist index.js index.mjs src/{!types}/*.d.ts index.css 'demo/**/*.d.ts' 'src/**/*.d.ts' 'src/**/*.map' './*.map'",
     "prebuild": "npm-run-all -s clean -p lint check-ts",
     "build/demo": "NODE_ENV=production parcel build demo/index.html --public-url /react-week-scheduler/",
-    "build": "npm-run-all -s clean -p --aggregate-output types build/demo rollup",
+    "build": "npm-run-all -s clean -p --aggregate-output types rollup",
     "deploy/demo": "gh-pages -d dist",
     "run-prettier": "prettier --write '*.json' 'types/**/*.ts' 'src/**/*.ts{,x}' 'src/**/*.scss'",
     "semantic-release": "semantic-release",
