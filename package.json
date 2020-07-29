@@ -1,7 +1,7 @@
 {
   "name": "react-weekly-scheduler",
   "author": "leandrogallippi",
-  "version": "0.0.0-development",
+  "version": "0.0.1",
   "license": "MIT",
   "description": "![Travis (.org)](https://img.shields.io/travis/remotelock/react-week-scheduler.svg) ![npm](https://img.shields.io/npm/v/@remotelock/react-week-scheduler.svg)",
   "homepage": "https://github.com/leandrogallippi/react-week-scheduler/",
@@ -23,7 +23,7 @@
   "files": [
     "build"
   ],
-  "types": "./src/index.d.ts",
+  "types": "build/index.d.ts",
   "dependencies": {
     "@reach/visually-hidden": "^0.1.2",
     "@rehooks/component-size": "^1.0.2",
